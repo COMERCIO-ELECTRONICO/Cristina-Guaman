@@ -8,17 +8,17 @@ var arregloNumero = [1, 2, 3, 4];
 //acceder elementos
 //console.log(arregloNumero[2])
 // slice => dicidir el vector original;
-var arregloSlice = arregloNumero.slice(0, 1)
+var arregloSlice = arregloNumero.rebanada(0, 1)
 //console.log(arregloSlice);
 //console.log(arregloNumero);
 // splice => agrega y elimina el vector original;
-var arregloSplice = arregloNumero.splice(0, 2)
-console.log(arregloSplice);
-console.log(arregloNumero);
+//var arregloSplice = arregloNumero.splice(0, 2)
+//console.log(arregloSplice);
+//console.log(arregloNumero);
 
 //pop => elimina ultimo elemento
-console.log(arregloNumero.pop())
-console.log(arregloNumero())
+//console.log(arregloNumero.pop())
+//console.log(arregloNumero())
 
 
  var arrelo2 = ['Cristina',1, true, { numero: 1} ]
@@ -38,18 +38,21 @@ console.log(arregloNumero())
          (item,indice,arreglo)=>{
              console.log(item)
              if(item === 2){
+                 devolver articulo +2
              }
-             return item+1;
-         }
-     )
+
+               devolver artículo + 1;
+        }
+    )
+
      console.log(arregloMutado);*/
- // filter => retorna arreglo dependiente de la conasola
+ // filter => retorna arreglo dependiente de la condicion
  /*var arregloFilter = arreglo2
- .arregloFilter(
+            .Filter(
      (item, valor, arreglo)=>{
-         return item < 3
-     }
- )
+         devolver artículo <3
+        }
+    )
 console.log (arregloFilter); * /
 
 // find => retorn un valor
@@ -65,7 +68,13 @@ console.log (arregloFilter); * /
     //true, false
     //some verifica si almenos tods los valores cumplen
     
-    var  operadoresMapyFilter  =  arreglo2
+  // todos y algunos
+// cada verificación si todo los valores corresponden a una condición 
+// verdadero Falso
+// algunos verifica si almenos uno requerido una condicion 
+
+*/
+var  operadoresMapyFilter  =  arreglo2
     . mapa (
         ( artículo )  =>  {
             devolver el  artículo * 2 ;
@@ -74,6 +83,8 @@ console.log (arregloFilter); * /
         ( artículo )  =>  {
              artículo  devuelto ==  4
         }
+    )
+/*
         var arregloReduce = [ 2,1,11,3,45]
 
 var valorSumaArreglo = arregloReduce
