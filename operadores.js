@@ -74,6 +74,16 @@ console.log (arregloFilter); * /
         ( artículo )  =>  {
              artículo  devuelto ==  4
         }
+        var arregloReduce = [ 2,1,11,3,45]
+
+var valorSumaArreglo = arregloReduce
+.reduce(
+    (acumulador, item, indice, arreglo) => {
+        return acumulador + item
+    }, 0 //es valor inicial del acumulador
+)
+
+console.log(valorSumaArreglo)
     )
 
 
