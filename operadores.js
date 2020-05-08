@@ -38,10 +38,10 @@ var arregloSlice = arregloNumero.rebanada(0, 1)
          (item,indice,arreglo)=>{
              console.log(item)
              if(item === 2){
-                 devolver articulo +2
+                 return item +2
              }
 
-               devolver artículo + 1;
+               return item + 1;
         }
     )
 
@@ -50,7 +50,7 @@ var arregloSlice = arregloNumero.rebanada(0, 1)
  /*var arregloFilter = arreglo2
             .Filter(
      (item, valor, arreglo)=>{
-         devolver artículo <3
+         return item <3
         }
     )
 console.log (arregloFilter); * /
@@ -59,29 +59,25 @@ console.log (arregloFilter); * /
 / * var valorFind = arreglo2
     .encontrar(
         (item, indice, arreglo) => {
-            artículo devuelto === 1
+            return item === 1
         }
     )
     console.log (valorFind); * /
     // every y some
     //every= verifica si todo los valores cumplen con el 
     //true, false
-    //some verifica si almenos tods los valores cumplen
+    //some verifica si almenos tods los valores cumplen una condicion
     
-  // todos y algunos
-// cada verificación si todo los valores corresponden a una condición 
-// verdadero Falso
-// algunos verifica si almenos uno requerido una condicion 
-
+  
 */
-var  operadoresMapyFilter  =  arreglo2
-    . mapa (
-        ( artículo )  =>  {
-            devolver el  artículo * 2 ;
+var operadoresMapyFilter = arreglo2
+    .map(
+        (item) => {
+            return item * 2;
         }
-    ) . filtro (
-        ( artículo )  =>  {
-             artículo  devuelto ==  4
+    ).filter(
+        (item) => {
+            return item == 4
         }
     )
 /*
