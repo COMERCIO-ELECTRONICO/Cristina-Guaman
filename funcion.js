@@ -26,5 +26,4 @@ var json = {
         return a + b;
     }
 }
-
 console.log(json.suma(1,2));

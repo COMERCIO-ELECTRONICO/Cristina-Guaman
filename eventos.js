@@ -1,8 +1,4 @@
-<<<<<<< 3f06fabfa61aa14beb3fbb42a5f76342bacbb1dc
-const  EventEmitter  =  require ( 'eventos' );
-=======
 const EventEmitter = require('events')
->>>>>>> trabajo
 
 class entrarALaCasa extends EventEmitter { }
 
