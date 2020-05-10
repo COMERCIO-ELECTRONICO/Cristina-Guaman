@@ -1,5 +1,6 @@
 const invertirPalabra = palabra => palabra.split("").reverse().join("");
 let palabra = "COMERCIO ELECTRONICO";
+console.log('||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||')
 console.log("PALABRA INVERTIDA:", invertirPalabra(palabra));
 
 
@@ -10,7 +11,7 @@ return Ppalabra
 }
 
 
-
+console.log('||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||')
 console.log("Palabra1:",mayuscula(texto).toUpperCase());
 
 
@@ -29,6 +30,8 @@ let mitad = (texto)=>{
     return media
 }
 console.log("Palabra3:",mitad(texto.toUpperCase()));
+console.log('*****************SUMA DE LAS COMAS Y PUNTOS*************')
+
 
 function contar(texto, caracter) {
     return [...texto].filter(l => l === caracter).length;
