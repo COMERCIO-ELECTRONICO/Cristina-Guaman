@@ -1,28 +1,25 @@
-
-//FUNSIONES Y TIPOS DE DATOS PRIMITIVOS
-
-function saludar(){
+function saludar() {
     return 'hola'
 }
 
 saludar()
 console.log(saludar())
 
-//funsiones anónimas -> se almacena en una variable
-var funsionAnonima = function(){
-    return 'función anónima'
-}
-console.log(funsionAnonima())
+// funciones anonimas
 
-//funsion arrow fat
-var funcionFlechaGorda = (a,b) => {
+var funcionAnonima = function () {
+    return 'funcion anonima'
+}
+console.log(funcionAnonima())
+// funciones arrow fat function
+var funcionFechaGorda = (a, b) => {
     return a + b;
 }
 
-console.log(funcionFlechaGorda(2,3));
+console.log(funcionFechaGorda('a', { a: 1 }));
 
 var json = {
-    suma: (a,b) => {
+    suma: (a, b) => {
         return a + b;
     }
 }

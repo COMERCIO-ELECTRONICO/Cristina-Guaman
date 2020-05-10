@@ -12,4 +12,4 @@ entrarCasa.on(nombreEvento, (nombre) => {
 
 // evento que emite
 // EMIT
-entrarCasa.emit(nombreEvento, 'Cistina')
+entrarCasa.emit(nombreEvento, 'Cristina')
