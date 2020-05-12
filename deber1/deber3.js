@@ -9,8 +9,3 @@ function listarUsuarios(arreglo, cb){
         cb({
             mensaje: 'Lista de usuarios'
 
-        })
-}
-listarUsuarios(arregloUsuarios,(respuestaMensaje)=>{
-    console.log(respuestaMensaje);
-})
