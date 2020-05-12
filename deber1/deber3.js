@@ -51,7 +51,7 @@ function editarUsuario(arreglo,nombre,edad,fechaNacimiento,Telf,indice,indice2,i
   
     arreglo[indice4] = Telf
   
-    m({
+    cb({
       mensaje: "se edito correctamente",
       arreglo,
     });
@@ -71,7 +71,7 @@ function editarUsuario(arreglo,nombre,edad,fechaNacimiento,Telf,indice,indice2,i
     arreglo[indice3] = fechaNacimiento
   
     arreglo[indice4] = Telf
-    m({
+    cb({
       mensaje: "Se elimino",
       arreglo,
     });
