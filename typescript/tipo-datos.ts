@@ -67,13 +67,6 @@ class hijo extends Persona {
 const hijoPersona = new hijo('Cristina', 'Guaman');
 console.log(hijoPersona);
 
-class Person{
-    constructor(
-        protected nombre?: string,
-        protected apellido?: string
-    ){}
-}
-
 class Person {
     constructor(
         protected nombre?: string,
