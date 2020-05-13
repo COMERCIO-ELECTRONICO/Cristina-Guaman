@@ -73,6 +73,7 @@ class Person{
         protected apellido?: string
     ){}
 }
+
 class Person {
     constructor(
         protected nombre?: string,
@@ -82,8 +83,8 @@ class Person {
 
 class alumno extends Person {
     constructor(
-        protected nombre: string,
-        protected apellido: string
+        protected nombre?: string,
+        protected apellido?: string
     ) {
         super(nombre, apellido);
     }
@@ -104,6 +105,6 @@ class alumno extends Person {
 }
 
 const alumnoNuevo: alumno = new alumno();
-alumnoNuevo.setNombre('kevin');
+alumnoNuevo.setNombre('Cristina');
 alumnoNuevo.setApellido('');
 alumnoNuevo.getApellido();
