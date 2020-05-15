@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-mi-primer-componente',
@@ -11,6 +11,8 @@ export class MiPrimerComponenteComponent implements OnInit {
     @Input() imagenPath: string;
     @Input() datos: Object;
 
+    @Output() saludoHijo = new EventEmitter();
+
     constructor() { }
   
     ngOnInit() {
@@ -18,6 +20,7 @@ export class MiPrimerComponenteComponent implements OnInit {
   }
   SALUDAR(){
     alert('Hola :)');
+    this.saludoHijo.emit('saludo de tu hijo');
   
   }
 
