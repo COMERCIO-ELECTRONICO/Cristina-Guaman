@@ -6,17 +6,19 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./mi-primer-componente.component.css']
 })
 export class MiPrimerComponenteComponent implements OnInit {
-    @Input() Titulo: string;
-    @Input() NombreBoton: string;
-    @Input() ImagenPAth: string;
+    @Input() titulo: string;
+    @Input() nombreBoton: string;
+    @Input() imagenPath: string;
+    @Input() datos: Object;
 
-
-
-  constructor() { }
-
-  ngOnInit(): void {
+    constructor() { }
+  
+    ngOnInit() {
+  
   }
   SALUDAR(){
     alert('Hola :)');
+  
   }
+
 }

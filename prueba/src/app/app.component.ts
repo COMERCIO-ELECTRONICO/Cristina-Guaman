@@ -7,8 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'prueba';
-  
-  titulo = 'Soy tu Padre';
-  NombreBoton = 'Alerta';
-  imagen = "https://www.google.com/url?sa=i&source=imgres&cd=&cad=rja&uact=8&ved=2ahUKEwicmfrYg7XpAhXimq0KHTs6CcAQjRx6BAgBEAQ&url=https%3A%2F%2Fwww.pinterest.com%2Fnt9283548%2Fzotopia%2F&psig=AOvVaw0ILR4XDKt7vEF60fJ4GWRI&ust=1589603244876060";
+
+  tituloPadre = 'soy tu padre';
+  nombreBotonPadre = 'alerta';
+  imagenPadre = "https://www.google.com/url?sa=i&url=https%3A%2F%2Fas.com%2Ffutbol%2F2020%2F01%2F27%2Falbum%2F1580109965_448579.html&psig=AOvVaw2ic8jvPj_HwpbikEocEI1j&ust=1589611137397000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCJi4qpGhtekCFQAAAAAdAAAAABAy";
 }
