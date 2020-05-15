@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-mi-primer-componente',
@@ -6,6 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./mi-primer-componente.component.css']
 })
 export class MiPrimerComponenteComponent implements OnInit {
+    @Input() Titulo: string;
+    @Input() NombreBoton: string;
+    @Input() ImagenPAth: string;
+
+
 
   constructor() { }
 
