@@ -3,29 +3,20 @@
     {{datos.tituloPadre}}
 </h1>
 
-<h1>
-    PIPES
-</h1>
-<p>
-    objeto (JSON)
-</p>
-{{datos | json}}
+<h1>Pipes</h1>
 
-<p>
-    fecha
-</p>
+<p>objeto (JSON)</p>
+    {{datos | json}}
+
+<p>Fecha</p>
 {{fecha | date: 'yy MM dd'}}
-<p>
-    currency
-</p>
+
+<p>Currency</p>
 {{sueldo | currency}}
 {{nombre | uppercase}}
-
-
-
 
 <button (click)="SALUDAR()">
     {{datos.nombreBotonPadre}}
 </button>
 
-<img [src]="" alt="">
+<img [src]="datos.imagenPadre" alt="">

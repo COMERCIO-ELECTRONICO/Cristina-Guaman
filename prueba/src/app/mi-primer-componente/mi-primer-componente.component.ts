@@ -37,8 +37,9 @@ export class MiPrimerComponenteComponent implements OnInit, OnDestroy {
 
   }
 
-  SALUDAR(){
-    alert('Hola :)');
+  SALUDAR() {
+    alert('holaaaaaa');
     this.saludoHijo.emit('saludo de tu hijo');
   }
+
 }

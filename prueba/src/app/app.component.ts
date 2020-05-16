@@ -9,17 +9,17 @@ export class AppComponent {
   title = 'front-end';
 
   tituloPadre = 'soy tu padre hola';
-  nombreBotonPadre = 'alertar!!!!!!!!';
-  imagenPadre = 'https://as.com/futbol/imagenes/2020/01/27/album/1580109965_448579_1580110002_album_grande.jpg';
+  nombreBotonPadre = 'alertar!!';
+  imagenPadre = 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/1200px-Angular_full_color_logo.svg.png';
 
   datosHijo = {
     tituloPadre: 'soy tu padre hola',
-    nombreBotonPadre: 'alertar!!!!!!!!',
-    imagenPadre: 'https://as.com/futbol/imagenes/2020/01/27/album/1580109965_448579_1580110002_album_grande.jpg',
+    nombreBotonPadre: 'alertar!!',
+    imagenPadre: 'https://es.wikipedia.org/wiki/Angular_(framework)#/media/Archivo:Angular_full_color_logo.svg',
   };
 
 
-  obtenerRespuestaHjo(evento) {
+  obtenerRespuestaHijo(evento) {
     console.log(evento)
   }
 }
