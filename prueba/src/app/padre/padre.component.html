@@ -2,7 +2,22 @@
 <input type="text"
 [(ngModel)]="valorDelInput">
 {{valorDelInput}}
+<h2>DEBER</h2>
+<label>Nombre del Boton</label> <br>
+<input type="text" [(ngModel)]='nombreBoton'>
+
+<br>
+<label>EDAD</label> <br>
+<input type="number" [(ngModel)]='numero'>
+
+<p>La edad es: </p>{{edad}}
+
 <app-hijo
-[valorDelPadre]="valorDelInput"
+    [valorDelPadre]="valorDelInput"
+    [nombreBotonDeber]="nombreBoton"
+    [edadPadre]="numero" 
+    (calcular)="RespuestaHijo($event)"
+
+
 >
 </app-hijo>

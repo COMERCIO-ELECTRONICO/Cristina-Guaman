@@ -8,9 +8,20 @@ import { Component, OnInit } from '@angular/core';
 export class PadreComponent implements OnInit {
 
   constructor() { }
-  valorDelInput = '';
+  valorDelInput= '';
+  valorDelInputEdad= '';
+  nombreBoton:string;
+  
+  edad:number;
+  numero: number;
 
-  ngOnInit() {
+
+  ngOnInit(): void {
+  }
+  
+  RespuestaHijo(evento){
+    this.edad=evento
+    console.log(evento)
   }
 
 }
