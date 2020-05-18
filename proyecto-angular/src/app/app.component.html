@@ -1,5 +1,5 @@
 <div class="container">
-  <h1>
+  <h1 class="titulo">
     Titulo
    </h1>
 
@@ -37,4 +37,9 @@
 <button type="button" class="btn btn-outline-success" (click)="eventoClick()">Success</button>
 <p *ngIf="esconderHola" >Hola</p>
 <h2>angular => ngfor</h2>
+{{arregloNumeros}}
+<li *ngFor="let numero of arregloNumeros">
+  <ul>{{numero.nombre}}</ul>
+
+</li>
 
