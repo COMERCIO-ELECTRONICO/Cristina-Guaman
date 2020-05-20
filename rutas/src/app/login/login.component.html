@@ -1,1 +1,49 @@
 <p>login works!</p>
+<div class="container">
+    <h1>
+        variable html #
+    </h1>
+    <form (ngSubmit)="obtenerFormulario(formularioUsario)"#formularioUsario="ngForm">
+        <h4>Estado formulario</h4>
+        <h5>
+          <pre>
+            valid: {{formularioUsario.valid}}
+            invalid: {{formularioUsario.invalid}}
+            dirty: {{formularioUsario.dirty}}
+            touched: {{formularioUsario.touched}}
+            untouched: {{formularioUsario.untouched}}
+          </pre>
+        </h5>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email"
+          class="form-control"
+          id="exampleInputEmail1"
+          aria-describedby="emailHelp"
+          [(ngModel)]="email"
+          name="email"
+          placeholder="ejemplo"
+          minlength="3"
+          required
+          pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}"
+         #campoEmail="ngModel">
+
+
+         <h4>
+            Estados del campo email
+          </h4>
+          <pre>
+            valid: {{campoEmail.valid}}
+            invalid: {{campoEmail.invalid}}
+            dirty: {{campoEmail.dirty}}
+            touched: {{campoEmail.touched}}
+            untouched: {{campoEmail.untouched}}
+            
+          </pre>
+         
+    
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+</div>

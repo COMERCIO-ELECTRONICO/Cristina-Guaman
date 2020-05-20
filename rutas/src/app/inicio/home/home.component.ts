@@ -15,6 +15,7 @@ export class HomeComponent implements OnInit {
 
 
   ngOnInit(): void {
+    //observable son asincronos
     this._activatedRoute
     .params
     .subscribe((resultado) =>{
