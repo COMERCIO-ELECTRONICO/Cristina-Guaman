@@ -17,5 +17,11 @@ export class HomeComponent implements OnInit {
   irAUsuarioListar(){
     this._router.navigate(['/usuario','listar'])
   }
+  editarPokemon(){
+    this._router.navigate(['/pokemon','editarpokemon'])
+  }
+  crearPokemon(){
+    this._router.navigate(['/pokemon','crearpokemon'])
+  }
 
 }

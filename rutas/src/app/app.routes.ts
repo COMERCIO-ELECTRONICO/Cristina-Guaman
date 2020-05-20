@@ -25,6 +25,12 @@ const rutas: Routes = [
 
     },
     {
+        path: 'pokemon',
+        loadChildren: ()=>import('./pokemon/pokemon.module')
+        .then(pokemon=>pokemon.PokemonModule)
+
+    },
+    {
         path: '**',
         component: NoEncontradoComponent
     }
