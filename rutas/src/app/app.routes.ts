@@ -19,6 +19,12 @@ const rutas: Routes = [
 
     },
     {
+        path: 'usuario',
+        loadChildren: ()=>import('./usuario/usuario.module')
+        .then(usuario=>usuario.UsuarioModule)
+
+    },
+    {
         path: '**',
         component: NoEncontradoComponent
     }
