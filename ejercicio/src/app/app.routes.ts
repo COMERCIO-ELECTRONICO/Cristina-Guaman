@@ -18,6 +18,10 @@ const rutas: Routes = [
     {
         path: 'estudiante/perfil',
         component: PerfilUsuarioComponent,
+      },
+      {
+          path: 'profesor/perfil',
+          component: PerfilUsuarioComponent,
     },
     {
         path: 'login',

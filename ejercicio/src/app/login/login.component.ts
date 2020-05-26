@@ -33,7 +33,7 @@ export class LoginComponent implements OnInit {
       this.arregloResultado.push(valorEncontrado);
       this.sugerencias = this.arregloResultado;
     } else {
-      this.sugerencias = ['Cristina', 'cris', 'Alexandra'];
+      this.sugerencias = ['Estudiante','Profesor','cris'];
     }
   }
 
@@ -47,12 +47,19 @@ export class LoginComponent implements OnInit {
 
     if (this.pass === '1234') {
       alert(this.correo);
-      if (this.seleccionadoValor === 'Cristina') {
+      if (this.seleccionadoValor === 'Estudiante') {
         alert('es estudiante');
           this._router.navigate(
             ['/estudiante','perfil']
             )
       }
+    }if (this.pass === '1234') {
+        if (this.seleccionadoValor === 'Profesor') {
+          alert('es profesor');
+            this._router.navigate(
+              ['/profesor','perfil']
+              )
+        }
     } else {
       alert('no ingreso');
     }
