@@ -49,9 +49,10 @@ module.exports.datastores = {
     *                                                                          *
     ***************************************************************************/
      adapter: 'sails-mysql',   
-     url: 'mysql://root:@localhost:33062/practicacomercio',
+     url: 'mysql://root:@localhost:33062/practicacomercio',    
 
   },
 
 
 };
+     

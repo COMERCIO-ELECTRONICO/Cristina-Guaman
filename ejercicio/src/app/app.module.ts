@@ -1,7 +1,6 @@
 import { UsuarioModule } from './usuario/usuario.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { NoEncontradoComponent } from './no-encontrado/no-encontrado.component';
@@ -14,10 +13,12 @@ import { FormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
 import { AutoCompleteModule } from 'primeng/autocomplete';
 import { PerfilUsuarioComponent } from './perfil-usuario/perfil-usuario.component';
-
+import { CommonModule } from '@angular/common';
+import {HttpClientModule} from "@angular/common/http";
+import { LoginService } from './services/login.service';
 @NgModule({
   declarations: [
-    AppComponent,
+    AppComponent,     
     HomeComponent,
     NoEncontradoComponent,
     InicioSesionComponent,
@@ -33,9 +34,13 @@ import { PerfilUsuarioComponent } from './perfil-usuario/perfil-usuario.componen
     FormsModule,
     MatInputModule,
     AutoCompleteModule,
-    UsuarioModule
+    UsuarioModule,
+    CommonModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    LoginService
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule { }
