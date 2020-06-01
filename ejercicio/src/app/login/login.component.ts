@@ -24,6 +24,7 @@ export class LoginComponent implements OnInit {
     private readonly _router: Router,
     private readonly _loginService: LoginService
 
+
   ) {}
 
   ngOnInit(): void {
@@ -71,6 +72,7 @@ export class LoginComponent implements OnInit {
     this.seleccionadoValor = evento;
   }
   ingresar() {
+   
     console.log(this.valorAutocomplete);
     if (this.pass === '1234') {
       alert(this.correo);
