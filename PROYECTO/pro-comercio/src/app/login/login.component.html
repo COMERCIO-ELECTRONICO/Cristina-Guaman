@@ -1,0 +1,54 @@
+<div class="container-form">
+  <marquee><h1>Bazar SC</h1></marquee>
+  <div class="row justify-content-center">
+    <p></p><div class="col-sm-4">
+        <p></p><form class= mt-5>
+            <div class="row">
+              <div class="col">
+                  <label>Nombre </label>
+                <input type="text" class="form-control" [(ngModel)]="nombre" name="nombre" matInput required placeholder="Ingrese su nombre" > 
+              </div>
+              <div class="col">
+                <label>Apellido </label>
+                <input type="text" class="form-control" [(ngModel)]="apellido" name="apellido" matInput required placeholder="Ingrese su apellido" >
+              </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label>Cedula </label>
+                  <input type="number" matInput required placeholder="Ingrese solo 10 digitos" class="form-control" [(ngModel)]="cedula" name="cedula">
+                </div>
+                <div class="col">
+                    <label>Telefono </label>
+                  <input type="number" matInput required placeholder="Ingrese numero de tlf"class="form-control" [(ngModel)]="telefono" name="telefono">
+                </div>
+            </div>
+                <div class="row">
+                <div class="col">
+                    <label>Direccion </label>
+                  <input type="text" matInput required placeholder="Direccion"class="form-control" [(ngModel)]="direccion" name="direccion"  >
+                </div>
+                <div class="col">
+                    <label>Usuario </label>
+                  <input type="text" matInput required placeholder="Usuario"class="form-control" [(ngModel)]="usuario" name="usuario" >
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6"> 
+                        
+       <label>Contraseña</label>
+       <input type="password" class="form-control" matInput required placeholder="************" [(ngModel)]="pass" name="pass" >
+                      
+                  
+                </div>
+            </div>
+        </form>
+          
+            <div class="row ">
+                <div class="col-sm-12 ">
+                    <button  class="btn btn-outline-success btn-block" (click)="crear()" >
+                        Crear
+                    </button>
+                </div>
+            </div>
+            </div>

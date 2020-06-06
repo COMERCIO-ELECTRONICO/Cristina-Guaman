@@ -1,0 +1,178 @@
+<nav class="navbar navbar-dark bg-dark">
+  <a class="navbar-brand">Productos</a>
+  <form class="form-inline">
+    <a class="btn btn-outline-success my-2 my-sm-0" (click)="usuarios()">Listar usuarios</a>
+    <button class="btn btn-outline-success my-2 my-sm-0" [routerLink]="['/iniciar-sesion']" type="submit">salir</button>
+  </form>
+</nav>
+
+<div class="container-table">
+  <p-tabView>
+    <p-tabPanel header="PRODUCTO">
+      <div class="row justify-content-center">
+        <div class="col-sm-4">
+    
+          <table class="table mt-5">
+            <thead>
+              <tr class="table-info ">
+                <th scope="col">Id</th>
+                <th scope="col">Producto</th>
+                  <th scope="col">Editar</th>
+                <th scope="col">Eliminar</th>
+              </tr>    
+            </thead>   
+            
+            <tbody>
+              <tr *ngFor=" let datos of producto ">
+                <th scope="row">{{datos.id}}</th>
+                <td>{{datos.nombre_producto}}</td>
+                
+    
+                <td>
+                  <mat-expansion-panel>
+                    <mat-expansion-panel-header>
+                      Editar
+                    </mat-expansion-panel-header>
+                    <label>nombre del producto</label>
+                    <input type="text"  class="form-control" required [(ngModel)]="atualpro" name="atualpro" >
+                  
+                    <mat-action-row>
+                      <button mat-button (click)="actualizar(datos.id)">Editar</button>
+                    </mat-action-row>
+                  </mat-expansion-panel>
+                </td>
+                <td>
+    
+                  <button type="button" class="btn btn-danger" (click)="eliminarproducto(datos.id)">Eliminar</button>
+                </td>
+     
+              </tr>
+            
+           
+            </tbody>
+            
+          </table>
+        </div>
+      </div>
+    </p-tabPanel>
+    <p-tabPanel header="MARCA">
+      <div class="row justify-content-center">
+        <div class="col-sm-4">
+    
+          <table class="table mt-5">
+            <thead>
+              <tr class="table-info ">
+                <th scope="col">Id</th>
+                <th scope="col">Marca</th>
+                <th scope="col">Editar</th>
+                <th scope="col">Eliminar</th>
+              </tr>    
+            </thead>   
+            
+            <tbody>
+              <tr *ngFor="  let marca of datosmarca ">
+                <th scope="row">{{marca.id}}</th>
+                <td>{{marca.nombre_marca}}</td>
+                
+    
+                <td>
+                  <mat-expansion-panel>
+                    <mat-expansion-panel-header>
+                      Editar
+                    </mat-expansion-panel-header>
+                    <label>nombre del Marca</label>
+                    <input type="text"  class="form-control" required [(ngModel)]="nombremarca" name="nombremarca" >
+                  
+                    <mat-action-row>
+                      <button mat-button (click)="actualizarmarca(marca.id)">Editar</button>
+                    </mat-action-row>
+                  </mat-expansion-panel>
+                </td>
+                <td>
+    
+                  <button type="button" class="btn btn-danger"  (click)="eliminarmarca(marca.id)">Eliminar</button>
+                </td>
+                
+              </tr>
+            
+           
+            </tbody>
+            
+          </table>
+        </div>
+      </div>
+    </p-tabPanel>
+    <p-tabPanel header="DESCRIPCION">
+      <div class="row justify-content-center">
+        <div class="col-sm-4">
+    
+          <table class="table mt-5">
+            <thead>
+              <tr class="table-info ">
+                <th scope="col">Id</th>
+                <th scope="col">Tipo</th>
+                <th scope="col">Cantidad</th>
+                <th scope="col">Editar</th>
+                <th scope="col">Eliminar</th>
+              </tr>    
+            </thead>   
+            
+            <tbody>
+              <tr *ngFor="  let des of descripciom">
+                <th scope="row">{{des.id}}</th>
+                <td>{{des.tipo}}</td>
+                <td>{{des.cantidad}}</td>
+
+    
+                <td>
+                  <mat-expansion-panel>
+                    <mat-expansion-panel-header>
+                      Editar
+                    </mat-expansion-panel-header>
+                    <label>tipo</label>
+                    
+                    <input type="text" required class="form-control" [(ngModel)]="tipodes" name="tipodes" >
+                    <label>cantidad</label>
+                    
+                    <input type="text" required class="form-control" [(ngModel)]="cantidades" name="cantidades" >
+                  
+                    <mat-action-row>
+                      <button mat-button (click)="actualizardescripcion(des.id)">Editar</button>
+                    </mat-action-row>
+                  </mat-expansion-panel>
+                </td>
+                <td>
+    
+                  <button type="button" class="btn btn-danger" (click)="eliminardescripcion(des.id)">Eliminar</button>
+                </td>
+                
+              </tr>
+            
+        
+            </tbody>
+            
+          </table>
+        </div>
+      </div>
+    </p-tabPanel>
+    <p-tabPanel header="Añadir Pruducto">
+      
+      <label>nombre del producto</label>
+      <input type="text" required class="form-control" [(ngModel)]="nombrepro" name="nombrepro">
+      <label>Nombre de la marca</label>
+      <input type="text" required class="form-control" [(ngModel)]="marca" name="marca">
+      <label>descripcion</label>
+      <label>tipo </label>
+      <input type="text" required class="form-control" [(ngModel)]="tipo" name="tipo">
+      <label>cantidad</label>
+      <input type="text" required class="form-control" [(ngModel)]="cantidad" name="cantidad">
+    
+    
+
+      <button type="button" class="btn btn-primary" (click)="agregar()">AGREGAR</button>
+
+  
+
+    </p-tabPanel>
+</p-tabView>
+  </div>

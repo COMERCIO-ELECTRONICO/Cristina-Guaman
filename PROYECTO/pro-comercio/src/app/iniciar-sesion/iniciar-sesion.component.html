@@ -1,0 +1,34 @@
+<div class="container-form">
+    <div class="row justify-content-center">
+        
+        <div>
+        <div class="card mt-5"style="width: 18rem;">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTILLkjDylJL6RVJoM3o0SlA3e3m74bl_zOQdjY9UBKUAQzUgEJ&usqp=CAU" class="card-img-top" alt="...">
+            <div class="card-body">
+                <form class="text-center">
+                    <div class="form-group">
+                        <label>USUARIO</label>
+                        <input type="text" class="form-control" [(ngModel)]="usuario" name="usuario">
+            
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">CONTRASEÑA</label>
+                        <input type="password" class="form-control"  [(ngModel)]="contrasena" name="contrasena">
+                    </div>
+                    <button type="submit" class="btn btn-primary" (click)="validarcontra()">INGRESAR</button>
+                    <div class="row justify-content-center ">
+                    
+                        <a [routerLink]="['/login']" class="mb-3  mr-3">
+                            REGISTRARSE
+                          </a>
+                    </div>
+                    
+                </form>
+            
+            </div>
+          </div>
+    </div>
+</div>
+  
+
+</div>

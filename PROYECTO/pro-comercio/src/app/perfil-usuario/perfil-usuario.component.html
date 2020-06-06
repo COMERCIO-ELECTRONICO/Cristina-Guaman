@@ -1,0 +1,59 @@
+<div class="container">
+  <div class="row">
+      <form>
+          <div class="row">
+            <div class="col">
+                <label>Nombre </label>
+              <input type="text" class="form-control" [(ngModel)]="nombre" name="nombre">
+            </div>
+            <div class="col">
+              <label>Apellido </label>
+              <input type="text" class="form-control" [(ngModel)]="apellido" name="apellido"  >
+            </div>
+          </div>
+          <div class="row">
+              <div class="col">
+                  <label>Cedula </label>
+                <input type="text" class="form-control" [(ngModel)]="cedula" name="delula">
+              </div>
+              <div class="col">
+                  <label>Telefono </label>
+                <input type="text" class="form-control" [(ngModel)]="telefono" name="telefono">
+              </div>
+          </div>
+              <div class="row">
+              <div class="col">
+                  <label>Direccion </label>
+                <input type="text" class="form-control" [(ngModel)]="direccion" name="direccion"  >
+              </div>
+              <div class="col">
+                  <label>Usuario </label>
+                <input type="text" class="form-control" [(ngModel)]="usuario" name="usuario" >
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-sm-6"> 
+                      
+     <label>Pass</label>
+     <input type="password" class="form-control" matInput required placeholder="xxx@xxx.com" name="pass" [(ngModel)]="pass">
+                    
+                
+              </div>
+              <div class="col-sm-6">
+                 
+                      
+            <label>Conf pass</label>
+             <input type="password" class="form-control" matInput required placeholder="xxx@xxx.com" name="confimarPassword"
+            [(ngModel)]="confimarPassword">
+                      
+                 
+              </div>
+        
+          <div class="row ">
+              <div class="col-sm-12 ">
+                  <button  class="btn btn-outline-success btn-block" (click)="crear()" [disabled]="confimarPassword===''">
+                      Crear/editar
+                  </button>
+              </div>
+          </div>
+          </div>

@@ -1,0 +1,86 @@
+
+<nav class="navbar navbar-dark bg-dark">
+  <a class="btn " (click)="regresar()">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTypflzZYo3hgcN9qIFOmIjZiLYkD4pl4s9rMvfJk8CA_-klQya&usqp=CAU" width="45" height="45">
+  </a>
+  <a class="navbar-brand">Perfil</a>
+
+
+  <form class="form-inline">
+    <button class="btn btn-outline-success my-2 my-sm-0" [routerLink]="['/iniciar-sesion']" type="submit">salir</button>
+  </form>
+</nav>
+    
+    <p></p><div class="container-form">
+     
+      <div class="row justify-content-center">
+        
+          <form>
+              <div class="row">
+                <div class="col">
+                    <label>Nombre </label>
+                  <input type="text" class="form-control"placeholder="{{datosdescripcion.nombre}}" [(ngModel)]="nombre" name="nombre">
+                </div>
+                <div class="col">
+                  <label>Apellido </label>
+                  <input type="text" class="form-control"placeholder="{{datosdescripcion.apellido}}" [(ngModel)]="apellido" name="apellido"  >
+                </div>
+              </div>
+              <div class="row">
+                  <div class="col">
+                      <label>Cedula </label>
+                    <input type="number" class="form-control" placeholder="{{datosdescripcion.cedula}}"[(ngModel)]="cedula" name="cedula">
+                  </div>
+                  <div class="col">
+                      <label>Telefono </label>
+                    <input type="text" class="form-control" placeholder="{{datosdescripcion.telefono}}"[(ngModel)]="telefono" name="telefono">
+                  </div>
+              </div>
+                  <div class="row">
+                  <div class="col">
+                      <label>Direccion </label>
+                    <input type="text" class="form-control" placeholder="{{datosdescripcion.direccion}}"[(ngModel)]="direccion" name="direccion"  >
+                  </div>
+                  <div class="col">
+                      <label>Usuario </label>
+                    <input type="text" class="form-control" placeholder="{{datosperfil.nombre}}"[(ngModel)]="usuario" name="usuario" >
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-sm-6"> 
+                          
+         <label>Contraseña</label>
+         <input type="password" class="form-control" matInput required placeholder="{{datosperfil.contrasenia}}" [(ngModel)]="pass" name="pass" >
+                          
+                 
+         <p></p> <div class="row justify-content-center ">
+          <div class="col-sm-5 ">
+              <button  class="btn btn-outline-success btn-block" (click)="actualizar()" >
+                  Crear
+              </button>
+            </div>
+         
+        
+            </div>
+        </div>
+             
+              
+                
+              </div>
+            </form>
+          
+            
+                
+              </div>
+              
+              
+          
+     
+     
+         
+       
+       
+       
+         
+       
+   

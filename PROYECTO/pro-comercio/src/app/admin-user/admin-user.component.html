@@ -1,0 +1,45 @@
+<nav class="navbar navbar-dark bg-dark">
+    <a class="navbar-brand" class="button" type="submit" (click)="regresar()"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTypflzZYo3hgcN9qIFOmIjZiLYkD4pl4s9rMvfJk8CA_-klQya&usqp=CAU" width="45" height="45"></a>
+    
+    <form class="form-inline">
+         
+         <button class="btn btn-outline-success my-2 my-sm-0"[routerLink]="['/iniciar-sesion']" type="submit" >salir</button>
+       </form>
+     </nav>
+<div class="container-table">
+    <div class="row justify-content-left">
+        <div class="col-sm-9">
+
+<table class="table table-bordered mt-5"style="width: 50rem; heigth: 20rem;">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Apellido</th>
+        <th scope="col">cedula</th>
+        <th scope="col">telefono</th>
+        <th scope="col">Direccion</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let usuario of datosclientes">
+       
+        <th scope="row">{{usuario.id}}</th>
+        <td>{{usuario.nombre}}</td>
+        <td>{{usuario.apellido}}</td>
+        <td>{{usuario.cedula}}</td>
+        <td>{{usuario.telefono}}</td>
+        <td>{{usuario.direccion}}</td>
+      </tr>
+      
+    </tbody>
+  </table>
+</div>       
+</div>   
+</div>    
+                    
+                
+
+         
+  

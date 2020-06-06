@@ -1,0 +1,85 @@
+<nav class="navbar navbar-dark bg-dark">
+ <a class="navbar-brand"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTypflzZYo3hgcN9qIFOmIjZiLYkD4pl4s9rMvfJk8CA_-klQya&usqp=CAU" width="45" height="45"></a>
+    
+ <form class="form-inline">
+      
+  <button class="btn btn-outline-success my-2 my-sm-0" type="submit"(click)="eviar()"  >Mi  Perfil</button>
+</form>
+ <form class="form-inline">
+      
+      <button class="btn btn-outline-success my-2 my-sm-0"[routerLink]="['/iniciar-sesion']" type="submit" >salir</button>
+    </form>
+  </nav>
+  <div class="container-table">
+    <div class="row justify-content-left">
+      <div class="col-sm-1">
+  
+        <table class="table mt-5">
+          <thead>
+            <tr class="table-info ">
+              <th scope="col">Id</th>
+              <th scope="col">Producto</th>
+              <th scope="col">Marca</th>
+              <th scope="col">Tipo</th>
+              <th scope="col">Cantidad</th>
+              <th scope="col">Comprar</th>
+              
+            </tr>
+          </thead>
+          
+          <tbody>
+            <tr *ngFor=" let datos of producto">
+              <th scope="row">{{datos.id}}</th>
+              <td>{{datos.nombre_producto}}</td>
+              <td>{{datos.marca.nombre_marca}}</td>
+              <td>{{datos.descripcion.tipo}}</td>
+              <td>{{datos.descripcion.cantidad}}</td>
+              <td>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"(click)="comprar(datos)" >
+                  Compra
+                </button>
+            
+              </td>
+
+            </tr>
+          </tbody>
+          
+        </table>
+      </div>
+    </div>
+  
+    <div class="row justify-content-center">
+     
+     
+      <div class="col-sm-5">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://www.santosdistribuidores.com.ec/127-thickbox_default/lapices-de-color-caja-de-24-u.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="https://mimercadoenlinea.ec/7956-large_default/norma-lapices-de-colores-12-unid.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="https://www.tiendanorma.com/3746-large_default/lapiz-negro-gfto-hexagonal-12-und.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="https://mimercadoenlinea.ec/7880-large_default/norma-lapiz-de-grafito-gigante-punta-triangular-x2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="https://images-na.ssl-images-amazon.com/images/I/61DqkeTWh-L._AC_SX425_.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="https://production-tailoy-repo-magento-statics.s3.amazonaws.com/imagenes/872x872/productos/i/t/i/tijera-oficina-soft-touch-20-cm-fab-2603-default-1.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+        </div>
+        </div>
+    </div>
+
+      
+    
+    
+    
+      
+    

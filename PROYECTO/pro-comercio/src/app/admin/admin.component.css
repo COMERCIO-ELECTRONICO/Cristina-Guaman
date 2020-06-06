@@ -1,0 +1,15 @@
+footer {
+    position: fixed;
+	background-color:#1A1A1A;
+	height: 15%;
+  color: black;
+  padding: 10px;
+}
+.container-table{
+  justify-content: center;
+  background:url('https://img.freepik.com/free-photo/school-supplies-watercolour-background_23-2148224189.jpg?size=626&ext=jpg')center no-repeat;
+  width: 100%;
+  background-size: cover;
+  height: 100%;
+  }
+
